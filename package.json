@@ -1,0 +1,45 @@
+{
+  "name": "swapi-promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint *.js test/**/*.js",
+    "test": "node_modules/.bin/gulp test"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franckLdx/swapi-promise.git"
+  },
+  "keywords": [
+    "node",
+    "promise",
+    "swapi",
+    "backend"
+  ],
+  "author": "franckLdx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franckLdx/swapi-promise/issues"
+  },
+  "homepage": "https://github.com/franckLdx/swapi-promise#readme",
+  "dependencies": {
+    "swapi-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-react": "^7.2.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-istanbul": "^1.1.2",
+    "gulp-mocha": "^4.3.1"
+  }
+}
