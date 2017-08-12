@@ -14,13 +14,13 @@ To get films list:
 ```javascript
 const swapi = require('swapi-promise');
 const films = await swapi.get(swapi.FILMS);
-films.forEach(film => console.log(film.title);
+films.forEach(film => console.log(film.title));
 ```
 To get planets list:
 ```javascript
 const swapi = require('swapi-promise');
 const planets = await swapi.get(swapi.PLANETS);
-planets.forEach(planet => console.log(planet.name);
+planets.forEach(planet => console.log(planet.name));
 ```
 
 ## API
