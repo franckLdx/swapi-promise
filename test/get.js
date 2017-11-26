@@ -2,10 +2,19 @@
 
 const swapi = require('../index');
 
-for (const resouce of [swapi.FILMS, swapi.PEOPLE, swapi.PLANETS, swapi.VEHICLES, swapi.STARSHIPS, swapi.SPECIES]) {
-  swapi.get(resouce)
-    .then(data => data.forEach(item => console.log(item.name)));
-}
+const resouces = [
+  swapi.FILMS,
+  swapi.PEOPLE,
+  swapi.PLANETS,
+  swapi.VEHICLES,
+  swapi.STARSHIPS,
+  swapi.SPECIES,
+];
+
+resouces.forEach(async (resouce) => {
+  const data = await swapi.get(resouce);
+  data.forEach(item => console.log(item.name || item.title));
+});
 
 swapi.get('foo')
   .then(data => console.log(data.name))
