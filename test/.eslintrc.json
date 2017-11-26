@@ -7,6 +7,7 @@
     "node": true,
     "mocha": true
   },
+  "plugins": ["async-await"],
   "rules": {
     "arrow-body-style": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/test/**/*.js"]}],
@@ -14,6 +15,8 @@
     "no-underscore-dangle": "off",
     "strict": "off",
     "func-names": "off",
-    "prefer-arrow-callback": "off"
+    "prefer-arrow-callback": "off",
+    "async-await/space-after-async": 1,
+    "async-await/space-after-await": 1
   }
 }
